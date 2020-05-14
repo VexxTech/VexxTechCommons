@@ -14,9 +14,9 @@ object PermissionUtils {
     const val CAMERA_PERMISSIONS = 4
     const val READ_PHONE_STATE_PERMISSIONS = 5
     const val RECORD_AUDIO_PERMISSIONS = 6
-    const val CHANGE_WIFI_STATE = 7
-    const val ACCESS_WIFI_STATE = 8
-    const val ACCESS_FINE_LOCATION = 9
+    const val CHANGE_WIFI_STATE_PERMISSIONS = 7
+    const val ACCESS_WIFI_STATE_PERMISSIONS = 8
+    const val ACCESS_FINE_LOCATION_PERMISSIONS = 9
     const val MODIFY_AUDIO_PERMISSIONS = 10
 
     fun hasWakeLockPermissions(context: Context): Boolean {
