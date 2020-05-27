@@ -9,25 +9,26 @@ import java.io.File
 
 object FontUtils {
 
-    private const val FONT_AWESOME: String = "fonts/fontawesome-webfont.ttf"
+    const val FONT_AWESOME_FOUR: String = "fonts/fontawesome-four.ttf"
+    const val FONT_AWESOME_FIVE: String = "fonts/fontawesome-five.otf"
 
     fun getTypeface(fontFile: File): Typeface = Typeface.createFromFile(fontFile)
 
-    fun renderIconsInView(view: View) {
+    fun renderIconsInView(view: View, iconLibrary: String) {
         if (view is ViewGroup) {
             val viewGroup: ViewGroup = view
 
             for (i in 0 until viewGroup.childCount) {
                 val child = viewGroup.getChildAt(i)
 
-                renderIconsInView(child)
+                renderIconsInView(child, iconLibrary)
             }
         } else if (view is TextView) {
-            view.typeface = createIconTypeFace(view.context)
+            view.typeface = createIconTypeface(view.context, iconLibrary)
         }
     }
 
-    private fun createIconTypeFace(context: Context): Typeface {
-        return Typeface.createFromAsset(context.assets, FONT_AWESOME)
+    private fun createIconTypeface(context: Context, iconLibrary: String): Typeface {
+        return Typeface.createFromAsset(context.assets, iconLibrary)
     }
 }
