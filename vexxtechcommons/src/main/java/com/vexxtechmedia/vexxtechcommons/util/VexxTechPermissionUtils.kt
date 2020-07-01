@@ -5,7 +5,7 @@ import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.content.ContextCompat
 
-object PermissionUtils {
+object VexxTechPermissionUtils {
 
     const val WAKE_LOCK_PERMISSIONS = 0
     const val WRITE_EXTERNAL_STORAGE_PERMISSIONS = 1

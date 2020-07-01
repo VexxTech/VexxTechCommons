@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import java.io.File
 
-object FontUtils {
+object VexxTechFontUtils {
 
     const val FONT_AWESOME_FOUR: String = "fonts/fontawesome-four.ttf"
     const val FONT_AWESOME_FIVE: String = "fonts/fontawesome-five.otf"

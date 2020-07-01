@@ -3,7 +3,7 @@ package com.vexxtechmedia.vexxtechcommons.util
 import java.text.SimpleDateFormat
 import java.util.*
 
-object DateUtils {
+object VexxTechDateUtils {
 
     fun getFormattedDate(dateString: String, includeTime: Boolean, isSlash: Boolean): Date? = getFormatter(includeTime, isSlash).parse(dateString)
 

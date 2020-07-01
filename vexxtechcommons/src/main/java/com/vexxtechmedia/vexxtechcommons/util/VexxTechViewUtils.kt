@@ -6,7 +6,7 @@ import android.content.res.Configuration
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 
-object ViewUtils {
+object VexxTechViewUtils {
 
     fun hideKeyboard(activity: Activity) {
         activity.currentFocus?.let {
